@@ -4,6 +4,7 @@ import requests
 import sys
 
 def check_http_status(url):
+    """Check the HTTP status of the given URL."""
     try:
         response = requests.get(url)
         return response.status_code in [200, 201, 202, 204]
@@ -23,12 +24,15 @@ def main():
     
     all_successful = True
     for file_entry in data.get('files', []):
-        url = file_entry.get('url')
+        path = file_entry.get('path')
+        entry_type = file_entry.get('type')
         
-        if url:
-            if not check_http_status(url):
-                print(f"URL check failed for: {url}")
+        if entry_type == "url" and path:
+            if not check_http_status(path):
+                print(f"URL check failed for: {path}")
                 all_successful = False
+        elif entry_type != "url":
+            continue
         else:
             print("Error: Empty URL found in sources.json.")
             all_successful = False

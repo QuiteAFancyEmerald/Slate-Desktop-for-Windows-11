@@ -8,6 +8,7 @@ import py7zr
 import time
 import sys
 import platform
+import subprocess
 
 init(autoreset=True)
 
@@ -22,7 +23,7 @@ def check_windows_version():
             major_version = version_parts[0]
             build_number = int(version_parts[2])
             
-            # Check if the version is Windows 11
+            # Check if the version is Windows 11; if not Slate for Windows will not work.
             if major_version == "10" and build_number >= 22000:
                 return True
     
@@ -123,6 +124,17 @@ def download_file(url, name, description, extract, folder_main, folder_name, hea
     except Exception as err:
         print(Fore.RED + Style.BRIGHT + f"An error occurred: {err}")
 
+def execute_command(command):
+    """Execute a PowerShell command."""
+    try:
+        result = subprocess.run(["powershell", "-Command", command], capture_output=True, text=True)
+        if result.returncode == 0:
+            print(Fore.CYAN + Style.BRIGHT + f"\nCommand executed successfully:\n{result.stdout}")
+        else:
+            print(Fore.RED + Style.BRIGHT + f"\nCommand execution failed:\n{result.stderr}")
+    except Exception as err:
+        print(Fore.RED + Style.BRIGHT + f"An error occurred while executing the command: {err}")
+
 def load_sources():
     """Load the sources from sources.json."""
     try:
@@ -148,20 +160,23 @@ def main():
         print(Fore.RED + Style.BRIGHT + "No files found in sources.json. Exiting...")
         return
 
-    # Download each file sequentially
     for source in sources:
-        url = source.get('url')
-        name = source.get('name', 'Unnamed file')
+        path = source.get('path')
+        name = source.get('name', 'Unnamed item')
         description = source.get('description', 'No description provided')
         extract = source.get('extract', False)
         folder_main = source.get('folder_main', '01 - Default')
         folder_name = source.get('folder_name', 'Default')
+        type_ = source.get('type', 'url') 
         token = source.get('token', None)
         headers = {'Authorization': f'Bearer {token}'} if token else None
-        if url.strip():  # Only process if URL is not empty
-            download_file(url.strip(), name, description, extract, folder_main, folder_name, headers)
+        
+        if type_ == 'url' and path.strip():
+            download_file(path.strip(), name, description, extract, folder_main, folder_name, headers)
+        elif type_ == 'cmd' and path.strip():
+            execute_command(path.strip())
         else:
-            print(Fore.RED + Style.BRIGHT + f"Error: Empty URL found for file '{name}'. Skipping...")
+            print(Fore.RED + Style.BRIGHT + f"Error: Invalid type or empty path for '{name}'. Skipping...")
 
 if __name__ == "__main__":
     check_windows_version()
