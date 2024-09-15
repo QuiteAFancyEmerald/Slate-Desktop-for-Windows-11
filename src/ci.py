@@ -11,8 +11,7 @@ def check_http_status(url):
         return False
 
 def main():
-    # Load sources.json from the root directory
-    sources_file = '../sources.json'
+    sources_file = './sources.json'
     if not os.path.exists(sources_file):
         print(f"Error: {sources_file} not found.")
         return
