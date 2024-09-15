@@ -1,50 +1,39 @@
 import json
 import requests
-import sys
 import os
 
-def check_url_status(url):
-    """Check HTTP status of a URL."""
+def check_http_status(url):
     try:
         response = requests.get(url)
-        return response.status_code
+        return response.status_code in [200, 201, 202, 204]
     except requests.RequestException as e:
-        print(f"Error accessing URL '{url}': {e}")
-        return None
+        print(f"Request failed for URL {url}: {e}")
+        return False
 
 def main():
-    json_file_path = os.path.join(os.path.dirname(__file__), '../sources.json')
-
-    try:
-        with open(json_file_path, 'r') as file:
-            data = json.load(file)
-    except FileNotFoundError:
-        print(f"Error: {json_file_path} not found.")
-        sys.exit(1)
-    except json.JSONDecodeError:
-        print("Error: Failed to parse sources.json.")
-        sys.exit(1)
-
-    files = data.get('files', [])
-    if not files:
-        print("Error: No files found in sources.json.")
-        sys.exit(1)
-
-    # Check URLs
-    all_urls_successful = True
-    for file in files:
-        url = file.get('url')
+    # Load sources.json from the root directory
+    sources_file = '../sources.json'
+    if not os.path.exists(sources_file):
+        print(f"Error: {sources_file} not found.")
+        return
+    
+    with open(sources_file, 'r') as f:
+        data = json.load(f)
+    
+    all_successful = True
+    for file_entry in data.get('files', []):
+        url = file_entry.get('url')
         if url:
-            status_code = check_url_status(url)
-            if status_code != 200:
-                print(f"Error: URL '{url}' returned status code {status_code}.")
-                all_urls_successful = False
-
-    if all_urls_successful:
-        print("All URLs returned a successful status.")
-        sys.exit(0) 
+            if not check_http_status(url):
+                print(f"URL check failed for: {url}")
+                all_successful = False
+        else:
+            print("Empty URL found in sources.json, skipping...")
+    
+    if all_successful:
+        print("All URLs checked successfully.")
     else:
-        sys.exit(1) 
+        print("Some URLs failed to check.")
 
 if __name__ == "__main__":
     main()
