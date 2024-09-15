@@ -3,25 +3,133 @@
         {
             "path": "https://download.ameliorated.io/AME%20Wizard%20Beta.zip",
             "name": "AME Wizard",
-            "description": "The Ultimate tool for modifying Windows. This is used for essentially running registry tweaks and powershell scripts in the form of playbooks. Much safer than using ISOs.",
+            "description": "The Ultimate tool for modifying Windows. This is used for essentially running registry tweaks and powershell scripts in the form of playbooks (ReviOS). Much safer than using unknown distributed ISO mods.",
             "extract": true,
             "folder_main": "01 - Optimization",
-            "folder_name": "AME Wizard",
+            "folder_name": "Step 1 - AME Wizard",
             "type": "url"
         },
         {
             "path": "https://github.com/meetrevision/playbook/releases/download/24.06/Revi-PB-24.06.apbx",
             "name": "ReviOS Playbook",
-            "description": "ReviOS is a customized version of Windows, designed to be lightweight, stable, and focused on improving performance, privacy and compatibility.",
+            "description": "ReviOS is a customized version of Windows, designed to be lightweight, stable, and focused on improving performance, privacy and compatibility. This is the primary layer for optimization tweaks.",
             "extract": false,
             "folder_main": "01 - Optimization",
-            "folder_name": "Revi OS",
+            "folder_name": "Step 2 - Revi OS",
             "type": "url"
         },
         {
-            "path": "winget",
-            "name": "winget",
-            "description": "Winget testing",
+            "path": "https://github.com/hellzerg/optimizer/releases/download/16.7/Optimizer-16.7.exe",
+            "name": "optimizer",
+            "description": "Optimizer is used to apply specific system tweaks on fresh installs. This is layer one of any optimization tweaks.",
+            "extract": false,
+            "folder_main": "01 - Optimization",
+            "folder_name": "Step 2 - Optimizer",
+            "type": "url"
+        },
+        {
+            "path": "https://github.com/IgorMundstein/WinMemoryCleaner/releases/download/2.8/WinMemoryCleaner.exe",
+            "name": "WinMemoryCleaner",
+            "description": "Utility that uses native Windows features to optimize memory areas.",
+            "extract": false,
+            "folder_main": "01 - Optimization",
+            "folder_name": "Step 3 - WinMemoryCleaner",
+            "type": "url"
+        },
+        {
+            "path": "https://github.com/namazso/SecureUxTheme/releases/download/v2.2.0/ThemeTool.exe",
+            "name": "SecureUxTheme",
+            "description": "A secure boot compatible in-memory UxTheme patcher // used for applying modded msstyles themes",
+            "extract": false,
+            "folder_main": "02 - Shell Themes",
+            "folder_name": "Step 1 - SecureUXTheme",
+            "type": "url"
+        },
+        {
+            "path": "https://winaero.com/downloads/WinaeroThemeSwitcher.zip",
+            "name": "Winaero Theme Switcher",
+            "description": "A solution to any bugs with SecureUXTheme. Run after installing it to apply any themes",
+            "extract": true,
+            "folder_main": "02 - Shell Themes",
+            "folder_name": "Step 2 - Winaero Theme Switcher",
+            "type": "url"
+        },
+        {
+            "path": "https://dl.skinpacks.com/tools/7tsp_gui_2019_edition.zip",
+            "name": "7TSP",
+            "description": "Patches .mun files allowing for custom icons/icon packs",
+            "extract": true,
+            "folder_main": "02 - Shell Themes",
+            "folder_name": "Step 2 - 7TSP GUI 2019",
+            "type": "url"
+        },
+        {
+            "path": "https://github.com/Maplespe/ExplorerBlurMica/releases/download/2.0.1/Release_x64.zip",
+            "name": "ExplorerBlurMica",
+            "description": "Add background blur effect, Acrylic or Mica effect to Explorer",
+            "extract": true,
+            "folder_main": "03 - Explorer Mods",
+            "folder_name": "Step 1 - ExplorerBlurMica",
+            "type": "url"
+        },
+        {
+            "path": "https://github.com/Maplespe/explorerTool/releases/download/1.1.0/Release_x64_fix.zip",
+            "name": "ExplorerBgTool",
+            "description": "Tool that allows users to have a custom background image for Windows 11  within Explorer",
+            "extract": true,
+            "folder_main": "03 - Explorer Mods",
+            "folder_name": "Step 2 - ExplorerBgTool",
+            "type": "url"
+        },
+        {
+            "path": "https://github.com/Maplespe/DWMBlurGlass/releases/download/2.2.0/Release_x64.zip",
+            "name": "DWMBlurGlass",
+            "description": "Add custom effects to the global system title bar and other core Windows applications",
+            "extract": true,
+            "folder_main": "03 - Explorer Mods",
+            "folder_name": "Step 3 - DWMBlurGlass",
+            "type": "url"
+        },
+        {
+            "path": "https://github.com/ramensoftware/windhawk/releases/download/v1.5.1/windhawk_setup.exe",
+            "name": "Windhawk",
+            "description": "The customization marketplace for Windows programs - used for various Windows 11 taskbar mods and animation cleanup",
+            "extract": false,
+            "folder_main": "03 - Explorer Mods",
+            "folder_name": "Step 4 - Windhawk",
+            "type": "url"
+        },
+        {
+            "path": "https://github.com/valinet/ExplorerPatcher/releases/download/22621.3880.66.6_92fce8c/ep_setup.exe",
+            "name": "ExplorerPatcher",
+            "description": "Modifies the start menu // better version is StartIsBack though this is just a free alternative!",
+            "extract": false,
+            "folder_main": "03 - Explorer Mods",
+            "folder_name": "Step 5 - ExplorerPatcher",
+            "type": "url"
+        },
+        {
+            "path": "https://github.com/snowie2000/mactype/releases/download/v1.2024.9.14/MacTypeInstaller_2024.9.14.exe",
+            "name": "mactype",
+            "description": "Better font rendering for Windows // set to service mode",
+            "extract": false,
+            "folder_main": "03 - Explorer Mods",
+            "folder_name": "Step 7 - Mactype",
+            "type": "url"
+        },
+        {
+            "path": "https://github.com/chawyehsu/mactype-profile/raw/master/chawyehsu.ini",
+            "name": "Chawye Hsu's MacType Profile",
+            "description": "Better font rendering for Windows // set to service mode",
+            "extract": false,
+            "folder_main": "03 - Explorer Mods",
+            "folder_name": "Step 7 - Chawyehsu MacType profile",
+            "type": "url"
+        },
+        {
+            "path": "irm 'https://christitus.com/win' | iex",
+            "name": "Chris Titus Tech's Windows Utility",
+            "description": "Install Programs, Tweaks, Fixes, and Updates // Layer 02 for configuring Windows quickly",
             "type": "cmd"
         }
     ]
