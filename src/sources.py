@@ -7,37 +7,32 @@ import zipfile
 import py7zr
 import time
 import sys
-import os
 import platform
-
 
 init(autoreset=True)
 
 def check_windows_version():
+    """Check if the script is running on Windows 11."""
     system_version = platform.version()
     
     if platform.system() == "Windows":
         version_parts = system_version.split('.')
         
-        
         if len(version_parts) >= 3:
             major_version = version_parts[0]
-            build_number = int(version_parts[2]) 
+            build_number = int(version_parts[2])
             
             # Check if the version is Windows 11
             if major_version == "10" and build_number >= 22000:
                 return True
     
-    
     print("This tool is designed for Windows 11 only.")
     print("Press Enter to exit...")
-    input() 
+    input()
     sys.exit(1)
 
-if __name__ == "__main__":
-    check_windows_version()
-
 def print_slate_text():
+    """Print the Slate Desktop ASCII art and information."""
     project_version = "1.0.1"
     author = "Quite A Fancy Emerald"
     github_link = "https://github.com/QuiteAFancyEmerald/Slate-Desktop-for-Windows-11"
@@ -72,11 +67,12 @@ o'     o'       `YooP' 8 `YooP8   8  `Yooo'   8ooo'  `Yooo' `YooP' 8  `o.   8  `
     print(art)
     time.sleep(2)
 
-
 def clear_terminal():
+    """Clear the terminal screen."""
     os.system('cls' if os.name == 'nt' else 'clear')
 
 def display_rotating_indicator(message):
+    """Display a rotating indicator while processing."""
     indicator = ["\\", "|", "/", "-"]
     for _ in range(4):
         for symbol in indicator:
@@ -85,6 +81,7 @@ def display_rotating_indicator(message):
             time.sleep(0.2)
 
 def download_file(url, name, description, extract, folder_main, folder_name, headers=None):
+    """Download a file from the given URL and extract if necessary."""
     base_path = Path(f"./sources/{folder_main}")
     base_path.mkdir(parents=True, exist_ok=True)
 
@@ -94,7 +91,8 @@ def download_file(url, name, description, extract, folder_main, folder_name, hea
     file_name = url.split('/')[-1]
     file_path = subfolder_path / file_name
 
-    print(Fore.GREEN + Style.BRIGHT + f"Preparing to download: {name}")
+    print(Fore.GREEN + Style.BRIGHT + f"\nPreparing to download: {name}")
+    print(Fore.YELLOW + Style.BRIGHT + f"\n{description}\n")
     display_rotating_indicator("Downloading")
 
     try:
@@ -126,6 +124,7 @@ def download_file(url, name, description, extract, folder_main, folder_name, hea
         print(Fore.RED + Style.BRIGHT + f"An error occurred: {err}")
 
 def load_sources():
+    """Load the sources from sources.json."""
     try:
         root_dir = Path(__file__).parent.parent
         sources_path = root_dir / 'sources.json'
@@ -141,6 +140,7 @@ def load_sources():
         return []
 
 def main():
+    """Main function to run the script."""
     print_slate_text()
 
     sources = load_sources()
@@ -158,7 +158,11 @@ def main():
         folder_name = source.get('folder_name', 'Default')
         token = source.get('token', None)
         headers = {'Authorization': f'Bearer {token}'} if token else None
-        download_file(url.strip(), name, description, extract, folder_main, folder_name, headers)
+        if url.strip():  # Only process if URL is not empty
+            download_file(url.strip(), name, description, extract, folder_main, folder_name, headers)
+        else:
+            print(Fore.RED + Style.BRIGHT + f"Error: Empty URL found for file '{name}'. Skipping...")
 
 if __name__ == "__main__":
+    check_windows_version()
     main()
