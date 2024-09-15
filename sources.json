@@ -1,20 +1,20 @@
 {
     "files": [
         {
-            "url": "",
-            "name": "File One",
-            "description": "",
-            "extract": false,
-            "folder_main": "01 - Blah",
-            "folder_name": "Name"
+            "url": "https://download.ameliorated.io/AME%20Wizard%20Beta.zip",
+            "name": "AME Wizard",
+            "description": "The Ultimate tool for modifying Windows. This is used for essentially running registry tweaks and powershell scripts in the form of playbooks. Much safer than using ISOs.",
+            "extract": true,
+            "folder_main": "01 - Optimization",
+            "folder_name": "AME Wizard"
         },
         {
-            "url": "https://github.com/niivu/Windows-11-themes/raw/main/AIO/AIO.7z",
-            "name": "File Two",
-            "description": "",
-            "extract": true,
-            "folder_main": "02 - Blah",
-            "folder_name": "Name"
+            "url": "https://github.com/meetrevision/playbook/releases/download/24.06/Revi-PB-24.06.apbx",
+            "name": "ReviOS Playbook",
+            "description": "ReviOS is a customized version of Windows, designed to be lightweight, stable, and focused on improving performance, privacy and compatibility.",
+            "extract": false,
+            "folder_main": "01 - Optimization",
+            "folder_name": "Revi OS"
         }
     ]
 }
