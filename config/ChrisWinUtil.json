@@ -1,0 +1,22 @@
+{
+  "WPFInstall": [],
+  "WPFTweaks": [
+    "WPFTweaksRestorePoint",
+    "WPFTweaksAH",
+    "WPFTweaksRemoveCopilot",
+    "WPFTweaksHome",
+    "WPFTweaksDVR",
+    "WPFTweaksServices",
+    "WPFTweaksLoc",
+    "WPFTweaksHiber",
+    "WPFTweaksWifi",
+    "WPFTweaksDisableBGapps",
+    "WPFTweaksTele",
+    "WPFTweaksStorage",
+    "WPFTweaksDisableLMS1",
+    "WPFTweaksConsumerFeatures",
+    "WPFTweaksEdgeDebloat"
+  ],
+  "WPFFeature": [],
+  "Install": []
+}
