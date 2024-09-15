@@ -1,0 +1,20 @@
+{
+    "files": [
+        {
+            "url": "",
+            "name": "File One",
+            "description": "",
+            "extract": false,
+            "folder_main": "01 - Blah",
+            "folder_name": "Name"
+        },
+        {
+            "url": "",
+            "name": "File Two",
+            "description": "",
+            "extract": true,
+            "folder_main": "02 - Blah",
+            "folder_name": "Name"
+        }
+    ]
+}
