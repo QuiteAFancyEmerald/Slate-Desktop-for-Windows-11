@@ -1,5 +1,22 @@
 {
-  "WPFInstall": [],
+  "WPFInstall": [
+    "WPFInstallwingetui",
+    "WPFInstalldotnet5",
+    "WPFInstallvc2015_64",
+    "WPFInstallungoogled",
+    "WPFInstallffmpeg",
+    "WPFInstallsharex",
+    "WPFInstalldotnet6",
+    "WPFInstallfileconverter",
+    "WPFInstallvc2015_32",
+    "WPFInstalldotnet8",
+    "WPFInstallWindhawk",
+    "WPFInstallklite",
+    "WPFInstalldotnet7",
+    "WPFInstalldotnet3",
+    "WPFInstallimageglass",
+    "WPFInstallnvclean"
+  ],
   "WPFTweaks": [
     "WPFTweaksRestorePoint",
     "WPFTweaksAH",
@@ -18,5 +35,70 @@
     "WPFTweaksEdgeDebloat"
   ],
   "WPFFeature": [],
-  "Install": []
+  "Install": [
+    {
+      "winget": "SomePythonThings.WingetUIStore",
+      "choco": "wingetui"
+    },
+    {
+      "winget": "Microsoft.DotNet.DesktopRuntime.5",
+      "choco": "dotnet-5.0-runtime"
+    },
+    {
+      "winget": "Microsoft.VCRedist.2015+.x64",
+      "choco": "na"
+    },
+    {
+      "winget": "eloston.ungoogled-chromium",
+      "choco": "ungoogled-chromium"
+    },
+    {
+      "winget": "Gyan.FFmpeg",
+      "choco": "ffmpeg-full"
+    },
+    {
+      "winget": "ShareX.ShareX",
+      "choco": "sharex"
+    },
+    {
+      "winget": "Microsoft.DotNet.DesktopRuntime.6",
+      "choco": "dotnet-6.0-runtime"
+    },
+    {
+      "winget": "AdrienAllard.FileConverter",
+      "choco": "file-converter"
+    },
+    {
+      "winget": "Microsoft.VCRedist.2015+.x86",
+      "choco": "na"
+    },
+    {
+      "winget": "Microsoft.DotNet.DesktopRuntime.8",
+      "choco": "dotnet-8.0-runtime"
+    },
+    {
+      "winget": "RamenSoftware.Windhawk",
+      "choco": "windhawk"
+    },
+    {
+      "winget": "CodecGuide.K-LiteCodecPack.Standard",
+      "choco": "k-litecodecpack-standard"
+    },
+    {
+      "winget": "Microsoft.DotNet.DesktopRuntime.7",
+      "choco": "dotnet-7.0-runtime"
+    },
+    {
+      "winget": "Microsoft.DotNet.DesktopRuntime.3_1",
+      "choco": "dotnetcore3-desktop-runtime"
+    },
+    {
+      "winget": "DuongDieuPhap.ImageGlass",
+      "choco": "imageglass"
+    },
+    {
+      "winget": "TechPowerUp.NVCleanstall",
+      "choco": "na"
+    }
+  ]
 }
