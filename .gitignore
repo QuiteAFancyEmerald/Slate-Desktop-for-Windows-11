@@ -1,1 +1,9 @@
-/sources
+# Ignore all files and folders inside /sources
+sources/*
+
+# Allow GUIDE.md to be committed
+!/sources/USAGE.md
+!/sources/01 - Optimization/Step 1 - AME Wizard/USAGE.md
+!/sources/01 - Optimization/Step 2 - Revi OS/USAGE.md
+!/sources/01 - Optimization/Step 3 - Optimizer/USAGE.md
+!/sources/01 - Optimization/Step 3 - WinMemoryCleaner/USAGE.md
