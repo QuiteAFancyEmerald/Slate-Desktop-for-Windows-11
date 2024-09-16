@@ -34,7 +34,7 @@ def check_windows_version():
 
 def print_slate_text():
     """Print the Slate Desktop ASCII art and information."""
-    project_version = "1.0.1"
+    project_version = "1.0.6"
     author = "Quite A Fancy Emerald"
     github_link = "https://github.com/QuiteAFancyEmerald/Slate-Desktop-for-Windows-11"
     
@@ -57,7 +57,8 @@ o'     o'       `YooP' 8 `YooP8   8  `Yooo'   8ooo'  `Yooo' `YooP' 8  `o.   8  `
 {grey}::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::..:::::::::::::::::::::{reset}
 {blue}╔
 {blue}║{reset}                                                             
-{blue}║  Welcome to Slate Desktop - {green}Version {project_version}{reset}    
+{blue}║  Welcome to Slate Desktop - {green}Version {project_version}{reset}  
+{blue}║  Recommended Windows ISO: {green} Windows 11 IoT LTSC{reset}   
 {blue}║  Developed by {green}{author}{reset}                                  
 {blue}║  GitHub: {green}{github_link}{reset}                                   
 {blue}║  {yellow}Slate Desktop features extensive performance mods,{reset}
@@ -83,7 +84,7 @@ def display_rotating_indicator(message):
 
 def download_file(url, name, description, extract, folder_main, folder_name, headers=None):
     """Download a file from the given URL and extract if necessary."""
-    base_path = Path(f"./sources/{folder_main}")
+    base_path = Path(f"./sources/downloads/{folder_main}")
     base_path.mkdir(parents=True, exist_ok=True)
 
     subfolder_path = base_path / folder_name
