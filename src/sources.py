@@ -69,7 +69,8 @@ o'     o'       `YooP' 8 `YooP8   8  `Yooo'   8ooo'  `Yooo' `YooP' 8  `o.   8  `
 {blue}╚
     '''
     print(art)
-    time.sleep(2)
+    print("Press Enter to continue...")
+    input()
 
 def clear_terminal():
     os.system('cls' if os.name == 'nt' else 'clear')
@@ -144,7 +145,7 @@ def load_sources():
             data = json.load(file)
         return data.get('files', [])
     except FileNotFoundError:
-        print(Fore.RED + Style.BRIGHT + "sources.json file not found in the root directory.")
+        print(Fore.RED + Style.BRIGHT + "sources.json file not found in the root directory. Ensure the filename is exact.")
         return []
     except json.JSONDecodeError:
         print(Fore.RED + Style.BRIGHT + "Error decoding JSON from sources.json.")
