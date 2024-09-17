@@ -1,0 +1,57 @@
+{
+    "workbench.colorTheme": "Tokyo Night Gogh",
+    "workbench.iconTheme": "material-icon-theme",
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "workbench.colorCustomizations": {
+        "[One Dark Pro]": {
+            "activityBar.background": "#282c34cc",
+            "breadcrumb.background": "#00000000",
+            "button.background": "#40475499",
+            "dropdown.background": "#21252b4d",
+            "dropdown.border": "#21252b4d",
+            "editor.background": "#282c3499",
+            "editor.lineHighlightBackground": "#2c313c4d",
+            "editorGroupHeader.tabsBackground": "#282c34cc",
+            "editorGutter.background": "#00000000",
+            "editorPane.background": "#00000000",
+            "input.background": "#1d1f234d",
+            "list.activeSelectionBackground": "#2c313a99",
+            "list.hoverBackground": "#2c313a99",
+            "list.inactiveSelectionBackground": "#32384299",
+            "menu.background": "#21252b99",
+            "multiDiffEditor.headerBackground": "#00000000",
+            "notebook.cellEditorBackground": "#00000000",
+            "panel.background": "#282c34cc",
+            "settings.focusedRowBackground": "#00000000",
+            "sideBar.background": "#21252bcc",
+            "sideBarSectionHeader.background": "#282c344d",
+            "sideBarStickyScroll.background": "#21252b66",
+            "sideBarTitle.background": "#00000000",
+            "statusBar.background": "#21252bcc",
+            "statusBar.noFolderBackground": "#21252bcc",
+            "tab.activeBackground": "#282c3499",
+            "tab.activeBorder": "#b4b4b499",
+            "tab.border": "#00000000",
+            "tab.inactiveBackground": "#00000000",
+            "terminal.background": "#00000000",
+            "welcomePage.tileBackground": "#21252b4d",
+            "welcomePage.tileHoverBackground": "#282c3499"
+        },
+        "terminal.background": "#00000000"
+    },
+    "workbench.settings.applyToAllProfiles": [
+        "workbench.colorCustomizations"
+    ],
+    "vscode_vibrancy.opacity": 0.02,
+    "vscode_vibrancy.type": "acrylic",
+    "vscode_vibrancy.refreshInterval": 500,
+    "vscode_vibrancy.theme": "Tokyo Night Storm",
+    "vscode_vibrancy.preferedLightTheme": "Tokyo Night Storm",
+    "vscode_vibrancy.preferedDarkTheme": "Tokyo Night Storm",
+    "window.titleBarStyle": "custom",
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    }
+}
