@@ -13,7 +13,6 @@ import subprocess
 init(autoreset=True)
 
 def check_windows_version():
-    """Check if the script is running on Windows 11."""
     system_version = platform.version()
     
     if platform.system() == "Windows":
@@ -126,8 +125,6 @@ def download_file(url, name, description, extract, folder_main, folder_name, hea
         print(Fore.RED + Style.BRIGHT + f"An error occurred: {err}")
 
 def execute_command(command):
-    """Execute PowerShell commands"""
-
     display_rotating_indicator("Running powershell command please wait...")
     try:
         result = subprocess.run(["powershell", "-Command", command], capture_output=True, text=True)
@@ -139,7 +136,6 @@ def execute_command(command):
         print(Fore.RED + Style.BRIGHT + f"An error occurred while executing the command: {err}")
 
 def load_sources():
-    """Load the sources from sources.json."""
     try:
         root_dir = Path(__file__).parent.parent
         sources_path = root_dir / 'sources.json'

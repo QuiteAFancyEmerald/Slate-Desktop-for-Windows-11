@@ -277,7 +277,7 @@
             "type": "cmd"
         },
         {
-            "path": "powershell -File './winutil.ps1'",
+            "path": "powershell -File './src/winutil.ps1'",
             "name": "Chris Titus Tech's Windows Utility",
             "description": "Install Programs, Tweaks, Fixes, and Updates // Layer 02 for configuring Windows quickly. Use the config file provided in /config.",
             "type": "cmd"
