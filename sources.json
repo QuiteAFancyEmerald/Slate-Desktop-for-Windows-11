@@ -175,6 +175,12 @@
             "type": "cmd"
         },
         {
+            "path": "powershell -Command 'winget install --id Microsoft.PowerShell --source winget'",
+            "name": "Powershell 7",
+            "description": "Powershell 7 is much more updated",
+            "type": "cmd"
+        },
+        {
             "path": "powershell -Command 'winget install Gyan.FFmpeg'",
             "name": "FFmpeg",
             "description": "A complete, cross-platform solution to record, convert and stream audio and video; added to PATH automatically",
