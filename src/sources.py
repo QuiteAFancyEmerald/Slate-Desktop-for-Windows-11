@@ -33,8 +33,7 @@ def check_windows_version():
     sys.exit(1)
 
 def print_slate_text():
-    """Print the Slate Desktop ASCII art and information."""
-    project_version = "1.0.6"
+    project_version = "1.0.8"
     author = "Quite A Fancy Emerald"
     github_link = "https://github.com/QuiteAFancyEmerald/Slate-Desktop-for-Windows-11"
     
@@ -63,6 +62,10 @@ o'     o'       `YooP' 8 `YooP8   8  `Yooo'   8ooo'  `Yooo' `YooP' 8  `o.   8  `
 {blue}║  GitHub: {green}{github_link}{reset}                                   
 {blue}║  {yellow}Slate Desktop features extensive performance mods,{reset}
 {blue}║  {yellow}optimizations, productivity apps, and sleek theming.{reset}
+{blue}║{reset}  
+{blue}║{reset}  
+{blue}║  {blue}All sources fully transparent on GitHub or Winget! Check sources.json for the updated list.{reset}
+{blue}║  {blue}RUN AT YOUR OWN RISK!!!!{reset}
 {blue}║{reset}                                                          
 {blue}╚
     '''
@@ -70,11 +73,9 @@ o'     o'       `YooP' 8 `YooP8   8  `Yooo'   8ooo'  `Yooo' `YooP' 8  `o.   8  `
     time.sleep(2)
 
 def clear_terminal():
-    """Clear the terminal screen."""
     os.system('cls' if os.name == 'nt' else 'clear')
 
 def display_rotating_indicator(message):
-    """Display a rotating indicator while processing."""
     indicator = ["\\", "|", "/", "-"]
     for _ in range(4):
         for symbol in indicator:
@@ -83,7 +84,6 @@ def display_rotating_indicator(message):
             time.sleep(0.2)
 
 def download_file(url, name, description, extract, folder_main, folder_name, headers=None):
-    """Download a file from the given URL and extract if necessary."""
     base_path = Path(f"./sources/downloads/{folder_main}")
     base_path.mkdir(parents=True, exist_ok=True)
 
@@ -126,13 +126,15 @@ def download_file(url, name, description, extract, folder_main, folder_name, hea
         print(Fore.RED + Style.BRIGHT + f"An error occurred: {err}")
 
 def execute_command(command):
-    """Execute a PowerShell command."""
+    """Execute PowerShell commands"""
+
+    display_rotating_indicator("Running powershell command please wait...")
     try:
         result = subprocess.run(["powershell", "-Command", command], capture_output=True, text=True)
         if result.returncode == 0:
             print(Fore.CYAN + Style.BRIGHT + f"\nCommand executed successfully:\n{result.stdout}")
         else:
-            print(Fore.RED + Style.BRIGHT + f"\nCommand execution failed:\n{result.stderr}")
+            print(Fore.RED + Style.BRIGHT + f"\nCommand execution failed:\n{result.stdout}")
     except Exception as err:
         print(Fore.RED + Style.BRIGHT + f"An error occurred while executing the command: {err}")
 
@@ -153,7 +155,6 @@ def load_sources():
         return []
 
 def main():
-    """Main function to run the script."""
     print_slate_text()
 
     sources = load_sources()
