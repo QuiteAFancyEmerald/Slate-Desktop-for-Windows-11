@@ -175,6 +175,12 @@
             "type": "cmd"
         },
         {
+            "path": "powershell -Command 'winget install Microsoft.PowerToys'",
+            "name": "Powertoys",
+            "description": "Microsoft PowerToys is a set of utilities for power users to tune and streamline their Windows experience for greater productivity.",
+            "type": "cmd"
+        },
+        {
             "path": "powershell -Command 'winget install --id Microsoft.PowerShell --source winget'",
             "name": "Powershell 7",
             "description": "Powershell 7 is much more updated",
