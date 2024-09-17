@@ -48,7 +48,7 @@
         {
             "path": "https://github.com/namazso/SecureUxTheme/releases/download/v2.2.0/ThemeTool.exe",
             "name": "SecureUxTheme",
-            "description": "A secure boot compatible in-memory UxTheme patcher // used for applying modded msstyles themes",
+            "description": "A secure boot compatible in-memory UltraUxTheme patcher // used for applying modded msstyles themes and complex themes.",
             "extract": false,
             "folder_main": "02 - Shell Themes",
             "folder_name": "Step 1 - SecureUXTheme",
@@ -57,7 +57,7 @@
         {
             "path": "https://dl.skinpacks.com/tools/7tsp_gui_2019_edition.zip",
             "name": "7TSP",
-            "description": "Patches .mun files allowing for custom icons/icon packs",
+            "description": "Patches .mun files allowing for custom icons/icon packs.",
             "extract": true,
             "folder_main": "02 - Shell Themes",
             "folder_name": "Step 2 - 7TSP GUI 2019",
@@ -66,7 +66,7 @@
         {
             "path": "https://github.com/Maplespe/ExplorerBlurMica/releases/download/2.0.1/Release_x64.zip",
             "name": "ExplorerBlurMica",
-            "description": "Add background blur effect, Acrylic or Mica effect to Explorer",
+            "description": "Add background blur effect, Acrylic or Mica effect to Explorer.",
             "extract": true,
             "folder_main": "03 - Explorer Mods",
             "folder_name": "Step 1 - ExplorerBlurMica",
@@ -75,7 +75,7 @@
         {
             "path": "https://github.com/Maplespe/explorerTool/releases/download/1.1.0/Release_x64_fix.zip",
             "name": "ExplorerBgTool",
-            "description": "Tool that allows users to have a custom background image for Windows 11  within Explorer",
+            "description": "Tool that allows users to have a custom background image for Windows 11  within Explorer.",
             "extract": true,
             "folder_main": "03 - Explorer Mods",
             "folder_name": "Step 2 - ExplorerBgTool",
@@ -84,7 +84,7 @@
         {
             "path": "https://github.com/Maplespe/DWMBlurGlass/releases/download/2.2.0/Release_x64.zip",
             "name": "DWMBlurGlass",
-            "description": "Add custom effects to the global system title bar and other core Windows applications",
+            "description": "Add custom effects to the global system title bar and other core Windows applications.",
             "extract": true,
             "folder_main": "03 - Explorer Mods",
             "folder_name": "Step 3 - DWMBlurGlass",
@@ -93,7 +93,7 @@
         {
             "path": "https://github.com/ramensoftware/windhawk/releases/download/v1.5.1/windhawk_setup.exe",
             "name": "Windhawk",
-            "description": "The customization marketplace for Windows programs - used for various Windows 11 taskbar mods and animation cleanup",
+            "description": "The customization marketplace for Windows programs - used for various Windows 11 taskbar mods and animation cleanup.",
             "extract": false,
             "folder_main": "03 - Explorer Mods",
             "folder_name": "Step 4 - Windhawk",
@@ -102,10 +102,19 @@
         {
             "path": "https://github.com/valinet/ExplorerPatcher/releases/download/22621.3880.66.6_92fce8c/ep_setup.exe",
             "name": "ExplorerPatcher",
-            "description": "Modifies the start menu // better version is StartIsBack though this is just a free alternative!",
+            "description": "Modifies the start menu // better version is StartIsBack this is just a free alternative!",
             "extract": false,
             "folder_main": "03 - Explorer Mods",
             "folder_name": "Step 5 - ExplorerPatcher",
+            "type": "url"
+        },
+        {
+            "path": "https://github.com/otdavies/RightClickCompress/archive/refs/heads/main.zip",
+            "name": "RightClickCompress",
+            "description": "Adds a right click menu option to compress image and video files.",
+            "extract": false,
+            "folder_main": "03 - Explorer Mods",
+            "folder_name": "Step 5 - RightClickCompress",
             "type": "url"
         },
         {
@@ -120,7 +129,7 @@
         {
             "path": "https://github.com/chawyehsu/mactype-profile/raw/master/chawyehsu.ini",
             "name": "Chawye Hsu's MacType Profile",
-            "description": "Better font rendering for Windows // set to service mode",
+            "description": "Better font rendering for Windows // set to service mode.",
             "extract": false,
             "folder_main": "03 - Explorer Mods",
             "folder_name": "Step 7 - Chawyehsu MacType profile",
@@ -129,7 +138,7 @@
         {
             "path": "https://github.com/TranslucentTB/TranslucentTB/releases/download/2024.1/bundle.msixbundle",
             "name": "TranslucentTB",
-            "description": "A lightweight utility that makes the Windows taskbar translucent/transparent",
+            "description": "A lightweight utility that makes the Windows taskbar translucent/transparent.",
             "extract": false,
             "folder_main": "04 - Additional Theming",
             "folder_name": "Step 1 - TranslucentTB",
@@ -138,7 +147,7 @@
         {
             "path": "https://github.com/rainmeter/rainmeter/releases/download/v4.5.20.3803/Rainmeter-4.5.20.exe",
             "name": "Rainmeter",
-            "description": "Rainmeter allows you to display customizable skins on your desktop",
+            "description": "Rainmeter allows you to display customizable skins on your desktop.",
             "extract": false,
             "folder_main": "04 - Additional Theming",
             "folder_name": "Step 2 - Rainmeter",
@@ -147,16 +156,124 @@
         {
             "path": "https://github.com/MicaForEveryone/MicaForEveryone/releases/download/v1.3.1.2/MicaForEveryone-x64-Release-Installer.exe",
             "name": "MicaForEveryone",
-            "description": "Rainmeter allows you to display customizable skins on your desktop",
+            "description": "Mica For Everyone is a tool to enable backdrop effects on the title bars of Win32 apps on Windows 11.",
             "extract": false,
             "folder_main": "04 - Additional Theming",
             "folder_name": "Step 3 - MicaForEveryone",
             "type": "url"
         },
         {
-            "path": "irm 'https://christitus.com/win' | iex",
+            "path": "powershell -Command 'Install-PackageProvider -Name NuGet -Force | Out-Null; Install-Module -Name Microsoft.WinGet.Client -Force -Repository PSGallery | Out-Null; Repair-WinGetPackageManager'",
+            "name": "winget",
+            "description": "WinGet is the Windows Package Manager.",
+            "type": "cmd"
+        },
+        {
+            "path": "powershell -Command 'winget install SomePythonThings.WingetUIStore'",
+            "name": "UniGetUI",
+            "description": "UniGetUI is a GUI that can fetch, update and repackage winget applications. Manage winget apps as if its the Microsoft store!",
+            "type": "cmd"
+        },
+        {
+            "path": "powershell -Command 'winget install Gyan.FFmpeg'",
+            "name": "FFmpeg",
+            "description": "A complete, cross-platform solution to record, convert and stream audio and video; added to PATH automatically",
+            "type": "cmd"
+        },
+        {
+            "path": "powershell -Command 'winget install Microsoft.DotNet.DesktopRuntime.5'",
+            "name": "Microsoft.DotNet.DesktopRuntime.5",
+            "description": "Core runtime application",
+            "type": "cmd"
+        },
+        {
+            "path": "powershell -Command 'winget install Microsoft.VCRedist.2015+.x64'",
+            "name": "Microsoft.VCRedist.2015+.x64",
+            "description": "Core runtime application",
+            "type": "cmd"
+        },
+        {
+            "path": "powershell -Command 'winget install Microsoft.DotNet.DesktopRuntime.6'",
+            "name": "Microsoft.DotNet.DesktopRuntime.6",
+            "description": "Core runtime application",
+            "type": "cmd"
+        },
+        {
+            "path": "powershell -Command 'winget install Microsoft.VCRedist.2015+.x86'",
+            "name": "Microsoft.VCRedist.2015+.x86",
+            "description": "Core runtime application",
+            "type": "cmd"
+        },
+        {
+            "path": "powershell -Command 'winget install Microsoft.DotNet.DesktopRuntime.7'",
+            "name": "Microsoft.DotNet.DesktopRuntime.7",
+            "description": "Core runtime application",
+            "type": "cmd"
+        },
+        {
+            "path": "powershell -Command 'winget install Microsoft.DotNet.DesktopRuntime.8'",
+            "name": "Microsoft.DotNet.DesktopRuntime.8",
+            "description": "Core runtime application",
+            "type": "cmd"
+        },
+        {
+            "path": "powershell -Command 'winget install Microsoft.DotNet.DesktopRuntime.3_1'",
+            "name": "Microsoft.DotNet.DesktopRuntime.3_1",
+            "description": "Core runtime application",
+            "type": "cmd"
+        },
+        {
+            "path": "powershell -Command 'winget install AdrienAllard.FileConverter'",
+            "name": "FileConverter",
+            "description": "File Converter is a very simple tool which allows you to convert and compress files using the context menu in windows explorer",
+            "type": "cmd"
+        },
+        {
+            "path": "powershell -Command 'winget install DuongDieuPhap.ImageGlass'",
+            "name": "ImageGlass",
+            "description": "A lightweight, versatile image viewer",
+            "type": "cmd"
+        },
+        {
+            "path": "powershell -Command 'winget install CodecGuide.K-LiteCodecPack.Standard'",
+            "name": "K-LiteCodecPack",
+            "description": "An incredibly lightweight video player (and fast)",
+            "type": "cmd"
+        },
+        {
+            "path": "powershell -Command 'winget install Giorgiotani.Peazip'",
+            "name": "Peazip",
+            "description": "A free file archiver utility and rar extractor for Windows and Linux (better than WinRAR and no popup)",
+            "type": "cmd"
+        },
+        {
+            "path": "powershell -Command 'winget install winaero.tweaker'",
+            "name": "Winaero Tweaker",
+            "description": "Winaero Tweaker is a GUI that allows you to customize the appearance and behavior of the operating system in a flexible way.",
+            "type": "cmd"
+        },
+        {
+            "path": "powershell -Command 'winget install ShareX.ShareX'",
+            "name": "ShareX",
+            "description": "Screen capture, file sharing and productivity tool",
+            "type": "cmd"
+        },
+        {
+            "path": "powershell -Command 'winget install TechPowerUp.NVCleanstall'",
+            "name": "NVCleanstall",
+            "description": "NVCleanstall lets you customize the NVIDIA GeForce Driver package by removing components that you don't need (or want); used for removing telemetry and memory footprint. For NVIDIA GPUs only.",
+            "type": "cmd"
+        },
+        {
+            "path": "powershell -Command 'winget install eloston.ungoogled-chromium'",
+            "name": "Ungoogled-Chromium",
+            "description": "Chromium but without the Google. Incredibly fast and lightweight with configurations for privacy + ease of use.",
+            "type": "cmd"
+        },
+        {
+            "path": "powershell -File './winutil.ps1'",
             "name": "Chris Titus Tech's Windows Utility",
-            "description": "Install Programs, Tweaks, Fixes, and Updates // Layer 02 for configuring Windows quickly. Use the config file provided in /config",
+            "description": "Install Programs, Tweaks, Fixes, and Updates // Layer 02 for configuring Windows quickly. Use the config file provided in /config.",
             "type": "cmd"
         }
     ]
