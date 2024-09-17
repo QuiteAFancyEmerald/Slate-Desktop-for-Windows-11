@@ -38,11 +38,11 @@
         },
         {
             "path": "https://github.com/gordonbay/Windows-On-Reins/raw/master/wor.ps1",
-            "name": "Windows On Reins [EXPERT/OPTIONAL]",
+            "name": "Windows On Reins [EXPERT-OPTIONAL]",
             "description": "Only use this if you know what you are doing (explained in the Guide and not used in the screenshots). This is for pure performance and the Powershell script to dramatically harden, debloat, optimize, enhance privacy, avoid fingerprinting and improve performance on Windows 10 and 11 but it breaks many things.",
             "extract": true,
             "folder_main": "01 - Optimization",
-            "folder_name": "Optional - WOR (EXPERT/DO NOT USE)",
+            "folder_name": "EXPERT - WOR (DO NOT USE)",
             "type": "url"
         },
         {
