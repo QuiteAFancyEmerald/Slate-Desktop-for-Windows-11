@@ -5,17 +5,6 @@ Slate Desktop is a powerful windows environment setup with a focus on performanc
 A primary goal of this project is to utilize fully transparent applications versus bundling all assets within an untrusted ISO.
 Slate Desktop features a seamless process for downloading assets and automatic config imports needed via a CLI tool. Made in Python it runs through `sources.json` which serves as a transparent way of grabbing every asset needed. You can check it out here as well as a summary of each project here.
 
-<table>
-  <tr>
-    <td>
-      <img src="https://raw.githubusercontent.com/QuiteAFancyEmerald/Slate-for-Windows-11/main/img/style-example.png" alt="Explorer Style Example" />
-    </td>
-    <td>
-      <img src="https://raw.githubusercontent.com/QuiteAFancyEmerald/Slate-for-Windows-11/main/img/task-manager.png" alt="Task Manager Example" />
-    </td>
-  </tr>
-</table>
-
 ## Table Of Contents
 
 * [Introduction](#introduction)
@@ -33,4 +22,15 @@ Slate Desktop features a seamless process for downloading assets and automatic c
 > [!CAUTION]
 > You are responsible for running this script. Make sure you have backups prior to utilizing Slate and ensure you are on Windows 11 22H2/Windows 11 23H2/Windows 11 IoT LTSC. This project will not work on Windows 10 and will damage it!!!
 
-<img width="700px;" src="https://raw.githubusercontent.com/QuiteAFancyEmerald/Slate-for-Windows-11/main/img/preview.png"></img>
+<img src="https://raw.githubusercontent.com/QuiteAFancyEmerald/Slate-for-Windows-11/main/img/preview.png"></img>
+
+<table>
+  <tr>
+    <td>
+      <img src="https://raw.githubusercontent.com/QuiteAFancyEmerald/Slate-for-Windows-11/main/img/style-example.png" alt="Explorer Style Example" />
+    </td>
+    <td>
+      <img src="https://raw.githubusercontent.com/QuiteAFancyEmerald/Slate-for-Windows-11/main/img/task-manager.png" alt="Task Manager Example" />
+    </td>
+  </tr>
+</table>
