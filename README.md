@@ -6,15 +6,15 @@ One of the core principles of this project is **full transparency**—it avoids 
 
 Made in Python it runs through `sources.json` which serves as a transparent way of grabbing every asset needed. You can check it out <a href="https://github.com/QuiteAFancyEmerald/Slate-Desktop-for-Windows-11/blob/main/sources.json"></a> to review direct links as well as a list of each project used.
 
-<img width=200px align=right src="https://raw.githubusercontent.com/QuiteAFancyEmerald/Slate-for-Windows-11/main/img/preview.png"></img>
-
 ## Table Of Contents
+<img width=250px align=right src="https://raw.githubusercontent.com/QuiteAFancyEmerald/Slate-for-Windows-11/main/img/preview.png"></img>
 
 * [Introduction](#introduction)
 * [Installation](#installation)
 * [External Assets](#external-assets)
 * [Contributing](#contributing)
 * [Credits](#credits)
+
 
 ### Supported Windows 11 Versions: 
 `Windows 11 21H2`, `Windows 11 22H2`, `Windows 11 23H2`, `Windows 11 24H2` (Works with ANY Windows edition however **Windows 11 IoT LTSC** is *highly recommended*)
