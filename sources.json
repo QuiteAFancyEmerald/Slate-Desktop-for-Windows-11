@@ -6,7 +6,7 @@
             "description": "The Ultimate tool for modifying Windows. This is used for essentially running registry tweaks and powershell scripts in the form of playbooks (ReviOS). Much safer than using unknown distributed ISO mods.",
             "extract": true,
             "folder_main": "01 - Optimization",
-            "folder_name": "Step 1 - AME Wizard",
+            "folder_name": "Step 1 - AME Wizard - Core",
             "type": "url"
         },
         {
@@ -15,7 +15,7 @@
             "description": "ReviOS is a customized version of Windows, designed to be lightweight, stable, and focused on improving performance, privacy and compatibility. This is the primary layer for optimization tweaks and is the best combination of performance without breaking core Windows functionality.",
             "extract": false,
             "folder_main": "01 - Optimization",
-            "folder_name": "Step 2 - Revi OS",
+            "folder_name": "Step 2 - Revi OS - Core",
             "type": "url"
         },
         {
@@ -24,7 +24,7 @@
             "description": "Optimizer is used to apply specific system tweaks on fresh installs. This is layer one of any optimization tweaks.",
             "extract": false,
             "folder_main": "01 - Optimization",
-            "folder_name": "Step 3 - Optimizer",
+            "folder_name": "Step 3 - Optimizer - Polish",
             "type": "url"
         },
         {
@@ -33,7 +33,7 @@
             "description": "Utility that uses native Windows features to optimize memory areas.",
             "extract": false,
             "folder_main": "01 - Optimization",
-            "folder_name": "Step 3 - WinMemoryCleaner",
+            "folder_name": "Step 3 - WinMemoryCleaner - Background",
             "type": "url"
         },
         {
@@ -51,16 +51,16 @@
             "description": "A secure boot compatible in-memory UltraUxTheme patcher // used for applying modded msstyles themes and complex themes.",
             "extract": false,
             "folder_main": "02 - Shell Themes",
-            "folder_name": "Step 1 - SecureUXTheme",
+            "folder_name": "Step 1 - SecureUXTheme - Core",
             "type": "url"
         },
         {
             "path": "https://dl.skinpacks.com/tools/7tsp_gui_2019_edition.zip",
-            "name": "7TSP",
+            "name": "7TSP (Optional/Alternative is FOSS- this one is NOT)",
             "description": "Patches .mun files allowing for custom icons/icon packs.",
             "extract": true,
             "folder_main": "02 - Shell Themes",
-            "folder_name": "Step 2 - 7TSP GUI 2019",
+            "folder_name": "Step 2 - 7TSP GUI 2019 - Optional - NOTFOSS",
             "type": "url"
         },
         {
@@ -69,7 +69,7 @@
             "description": "Add background blur effect, Acrylic or Mica effect to Explorer.",
             "extract": true,
             "folder_main": "03 - Explorer Mods",
-            "folder_name": "Step 1 - ExplorerBlurMica",
+            "folder_name": "Step 1 - ExplorerBlurMica - Style",
             "type": "url"
         },
         {
@@ -78,7 +78,7 @@
             "description": "Tool that allows users to have a custom background image for Windows 11  within Explorer.",
             "extract": true,
             "folder_main": "03 - Explorer Mods",
-            "folder_name": "Step 2 - ExplorerBgTool",
+            "folder_name": "Step 2 - ExplorerBgTool - Style",
             "type": "url"
         },
         {
@@ -87,7 +87,7 @@
             "description": "Add custom effects to the global system title bar and other core Windows applications.",
             "extract": true,
             "folder_main": "03 - Explorer Mods",
-            "folder_name": "Step 3 - DWMBlurGlass",
+            "folder_name": "Step 3 - DWMBlurGlass - Style",
             "type": "url"
         },
         {
@@ -96,7 +96,7 @@
             "description": "The customization marketplace for Windows programs - used for various Windows 11 taskbar mods and animation cleanup.",
             "extract": false,
             "folder_main": "03 - Explorer Mods",
-            "folder_name": "Step 4 - Windhawk",
+            "folder_name": "Step 4 - Windhawk - Core",
             "type": "url"
         },
         {
@@ -105,7 +105,7 @@
             "description": "Modifies the start menu // better version is StartIsBack this is just a free alternative!",
             "extract": false,
             "folder_main": "03 - Explorer Mods",
-            "folder_name": "Step 5 - ExplorerPatcher",
+            "folder_name": "Step 5 - ExplorerPatcher - Core",
             "type": "url"
         },
         {
@@ -114,7 +114,7 @@
             "description": "Adds a right click menu option to compress image and video files.",
             "extract": false,
             "folder_main": "03 - Explorer Mods",
-            "folder_name": "Step 5 - RightClickCompress",
+            "folder_name": "Step 5 - RightClickCompress - Core",
             "type": "url"
         },
         {
@@ -123,7 +123,7 @@
             "description": "Better font rendering for Windows // set to service mode",
             "extract": false,
             "folder_main": "03 - Explorer Mods",
-            "folder_name": "Step 7 - Mactype",
+            "folder_name": "Step 7 - Mactype - Optional",
             "type": "url"
         },
         {
@@ -132,7 +132,7 @@
             "description": "Better font rendering for Windows // set to service mode.",
             "extract": false,
             "folder_main": "03 - Explorer Mods",
-            "folder_name": "Step 7 - Chawyehsu MacType profile",
+            "folder_name": "Step 7 - Chawyehsu MacType profile - Optional",
             "type": "url"
         },
         {
@@ -141,7 +141,7 @@
             "description": "A lightweight utility that makes the Windows taskbar translucent/transparent.",
             "extract": false,
             "folder_main": "04 - Additional Theming",
-            "folder_name": "Step 1 - TranslucentTB",
+            "folder_name": "Step 1 - TranslucentTB - Style",
             "type": "url"
         },
         {
@@ -150,7 +150,7 @@
             "description": "Rainmeter allows you to display customizable skins on your desktop.",
             "extract": false,
             "folder_main": "04 - Additional Theming",
-            "folder_name": "Step 2 - Rainmeter",
+            "folder_name": "Step 2 - Rainmeter - Style",
             "type": "url"
         },
         {
@@ -159,7 +159,7 @@
             "description": "Mica For Everyone is a tool to enable backdrop effects on the title bars of Win32 apps on Windows 11.",
             "extract": false,
             "folder_main": "04 - Additional Theming",
-            "folder_name": "Step 3 - MicaForEveryone",
+            "folder_name": "Step 3 - MicaForEveryone - Style",
             "type": "url"
         },
         {
