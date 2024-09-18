@@ -1,7 +1,7 @@
 {
     "files": [
         {
-            "path": "https://download.ameliorated.io/AME%20Wizard%20Beta.zip",
+            "path": "https://github.com/Ameliorated-LLC/trusted-uninstaller-cli/releases/download/0.7.6/AME-Wizard-Beta.exe",
             "name": "AME Wizard",
             "description": "The Ultimate tool for modifying Windows. This is used for essentially running registry tweaks and powershell scripts in the form of playbooks (ReviOS). Much safer than using unknown distributed ISO mods.",
             "extract": true,
