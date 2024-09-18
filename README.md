@@ -1,10 +1,12 @@
 # Slate-Desktop-for-Windows-11
 
-**Slate Desktop** is a powerful Windows environment setup focused on **performance**, **productivity enhancements**, **shell modifications**, and a **modern aesthetic** tailored specifically for Windows 11. Unlike other modpacks that revert to outdated styles, Slate Desktop elevates the sleek, modern look of Windows 11 with performance and visual improvements.
+**Slate Desktop** is a powerful Windows environment setup focused on **performance**, **productivity enhancements**, **shell modifications**, and a **modern aesthetic** tailored specifically for Windows 11. Unlike other modpacks that revert to outdated styles, Slate Desktop elevates the sleek, modern look of Windows 11 with performance and visual improvements. 
 
 One of the core principles of this project is **full transparency**—it avoids *hidden automation and the use of untrusted, pre-modded ISOs*. Instead, Slate Desktop employs a seamless, CLI-based process to download assets and automatically import necessary configurations via a sources.json file. This ensures that each component of the setup is openly visible and customizable.
 
 Made in Python it runs through `sources.json` which serves as a transparent way of grabbing every asset needed. You can check it out <a href="https://github.com/QuiteAFancyEmerald/Slate-Desktop-for-Windows-11/blob/main/sources.json"></a> to review direct links as well as a list of each project used.
+
+<img width=200px align=right src="https://raw.githubusercontent.com/QuiteAFancyEmerald/Slate-for-Windows-11/main/img/preview.png"></img>
 
 ### Supported Windows 11 Versions: 
 `Windows 11 21H2`, `Windows 11 22H2`, `Windows 11 23H2`, `Windows 11 24H2` (Works with ANY Windows edition however **Windows 11 IoT LTSC** is *highly recommended*)
