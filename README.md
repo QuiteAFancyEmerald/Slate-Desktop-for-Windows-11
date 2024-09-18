@@ -39,7 +39,7 @@ Made in Python it runs through `sources.json` which serves as a transparent way 
   </tr>
   <tr>
     <td colspan="2" style="text-align:center;">
-      <img width=500px src="https://raw.githubusercontent.com/QuiteAFancyEmerald/Slate-Desktop-for-Windows-11/main/img/rightclick.png" alt="Right Click Example" />
+      <img width="300px" src="https://raw.githubusercontent.com/QuiteAFancyEmerald/Slate-Desktop-for-Windows-11/main/img/rightclick.png" alt="Right Click Example" />
     </td>
   </tr>
 </table>
