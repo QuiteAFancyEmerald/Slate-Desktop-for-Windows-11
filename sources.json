@@ -127,7 +127,7 @@
             "type": "url"
         },
         {
-            "path": "https://github.com/chawyehsu/mactype-profile/raw/master/chawyehsu.ini",
+            "path": "https://github.com/chawyehsu/mactype-profile/raw/refs/heads/main/chawyehsu.ini",
             "name": "Chawye Hsu's MacType Profile",
             "description": "Better font rendering for Windows // set to service mode.",
             "extract": false,
