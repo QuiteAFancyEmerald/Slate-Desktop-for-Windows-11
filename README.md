@@ -6,6 +6,8 @@ One of the core principles of this project is **full transparency**—it avoids 
 
 Made in Python it runs through `sources.json` which serves as a transparent way of grabbing every asset needed. You can check it out <a href="https://github.com/QuiteAFancyEmerald/Slate-Desktop-for-Windows-11/blob/main/sources.json"></a> to review direct links as well as a list of each project used.
 
+### Requires Python to be downloaded: https://www.python.org/downloads/
+
 ## Table Of Contents
 <img width=250px align=right src="https://raw.githubusercontent.com/QuiteAFancyEmerald/Slate-for-Windows-11/main/img/preview.png"></img>
 
