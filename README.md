@@ -4,7 +4,7 @@
 
 One of the core principles of this project is **full transparency**—it avoids *hidden automation, untrusted applications and the use of untrusted, pre-modded ISOs*. Instead, Slate Desktop employs a seamless, CLI-based process to download assets and automatically import necessary configurations via a `sources.json` file. This ensures that each component of the setup is openly visible and customizable.
 
-#### Considering starring this repository if you support it!
+### Considering starring this repository if you support it!
 
 Made in Python it runs through `sources.json` which serves as a transparent way of grabbing every asset needed. You can check it out <a href="https://github.com/QuiteAFancyEmerald/Slate-Desktop-for-Windows-11/blob/main/sources.json"></a> to review direct links as well as a list of each project used.
 
@@ -108,4 +108,20 @@ The last stage of this process is of course taskbar and start menu modifications
 - **Layer Three:** Right Click Compress, Right Click File Converter, WinSetView, FileOptimizer, Czkawka (`Tools; useful background utilities; recommended`)
 - **Layer Four:** Mactype, Chawyehsu Mactype Profile, Wallpaper Engine (`Background; optional but useful background utilities; recommended`)
 
+## Installation
 
+### Dependencies
+Requires **Python** to be downloaded in order to run. Download from below.
+
+**Python (Latest):** https://www.python.org/downloads/
+
+### Download Release
+1. Download the latest release from the <a href="https://github.com/QuiteAFancyEmerald/Slate-Desktop-for-Windows-11/releases">Releases</a> page or the source code button
+2. Unzip it to a location such as "C:\Users\[USER]\Documents".
+3. Run "install.bat" as administrator.
+4. Within the Powershell/Command Prompt window that opens follow the CLI process by pressing Enter
+5. Navigate to "[Location Path]\Slate-Desktop-for-Windows-11\sources" and read over the `Installation.md` file to step by step information on running all of the assets in `.\sources\downloads` (it is also numbered in the downloads folder)
+6. Follow each step within the `Installation.md` file by the numbers running each application in the `.\sources\downloads` folder and pasting configs from the correct folder `.\config`
+
+### Uninstall
+**Note:** This project **CANNOT** be uninstalled fully. The tweaks are safe for updating windows however just be sure to check this repository for updates or detailed information on supported versions
