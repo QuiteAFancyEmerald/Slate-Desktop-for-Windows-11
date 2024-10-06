@@ -93,7 +93,10 @@ Core windows theming is done through SecureUXTheme (Allows for patching msstyles
 ### Primary Themes
 Primary theming are the msstyles, icons and configuration files for Rainmeter within this project. Core windows theming steps must be done first in order to patch the required files for this to work.
 
-- **Layer One:** SecureUXTheme, UXThemePatcher, Winaero Theme Switcher (`Core; essential mods that must be used`)
+- **Layer One:** <a href="https://www.deviantart.com/niivu/art/pi11z-for-Windows-11-1084568949">pi11z</a> (`Core; Primary mssstyle/theme mod made by niivu. Download from DeviantArt`)
+- **Layer Two:** <a href="https://www.deviantart.com/niivu/art/pi11z-for-Windows-11-1084568949">pi11z Icons</a> (`Core; Primary icon theme set via 7tsp or Windhawk made by niivu. Download from DeviantArt`)
+- **Layer Three:** <a href="https://github.com/Tatsu-syo/noMeiryoUI/releases/download/TAG-3.3.1/noMeiryoUI3.3.1.zip">MeiryoUI</a> (`Core; Primary mssstyle/theme mod made by niivu. Download from DeviantArt`)
+- **Layer Four:** <a href="https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/JetBrainsMono.zip">JetBrainsMono</a> (`Core; Primary mssstyle/theme mod made by niivu. Download from DeviantArt`)
 
 ### Explorer Mods/Additional Theming
 Explorer mods include any changes to add the mica/acrylic effect to DWM (all native windows such as File Explorer, etc.), polishing menus and lastly background styles. This entire stage is a technically optional as some users do not enjoy transparency within their applications however you can still use each tool since a config exists where you can set the alpha to 255 (essentially zero transparency) but still get the clean mica effect. The optional parts include optimized font-rendering for Windows (ClearType often results in jagged, not decent font rendering so MacType solves that but allowing the modifications of default font rendering) and lastly features to be added to the right click menu such as File Converter and Compress File. 
@@ -102,7 +105,7 @@ The last stage of this process is of course taskbar and start menu modifications
 
 - **Layer One:** Windhawk, ExplorerPatcher, StartAllBack (`Core; essential mods that must be used`)
 - **Layer Two:** ExplorerBlurMica, ExplorerBgTool, DWMBlurGlass, TranslucentTB, Rainmeter, Mica For Everyone (`Styling; tweaks settings automatically`)
-- **Layer Three:** Right Click Compress, Right Click File Converter (`Tools; useful background utilities; recommended`)
+- **Layer Three:** Right Click Compress, Right Click File Converter, WinSetView, FileOptimizer, Czkawka (`Tools; useful background utilities; recommended`)
 - **Layer Four:** Mactype, Chawyehsu Mactype Profile, Wallpaper Engine (`Background; optional but useful background utilities; recommended`)
 
 
