@@ -50,6 +50,11 @@ Made in Python it runs through `sources.json` which serves as a transparent way 
       <img src="https://raw.githubusercontent.com/QuiteAFancyEmerald/Slate-Desktop-for-Windows-11/main/img/rightclick.png" alt="Right Click Example" />
     </td>
   </tr>
+  <tr>
+    <td>
+      <img src="https://raw.githubusercontent.com/QuiteAFancyEmerald/Slate-Desktop-for-Windows-11/refs/heads/main/img/clipreview.png" alt="Search Powertoys Example" />
+    </td>
+  </tr>
 </table>
 
 ## Introduction
@@ -74,8 +79,28 @@ Each source is not installed automatically but is instead downloaded and organiz
 The performance enhancements in Slate are applied through multiple layers, each providing optimizations that do not compromise *core* Windows functionality or user experience. At the core, Slate utilizes AME Wizard as the primary optimization layer, allowing users to switch between different "playbooks" — collections of PowerShell scripts and registry tweaks — that enhance system performance without requiring untrusted or modified ISOs. For this project ReviOS is integrated for its flexibility, open-source nature, and ability to configure optimizations via a GUI settings menu after being installed, offering performance improvements while preserving essential Windows features.
 
 - **Layer One:** AME Wizard, ReviOS (`Core; essential mods that must be used`)
-- **Layer Two:** Optimizer, winutil (`Polish; tweaks settings automatically`)
-- **Layer Three:** WinMemoryCleaner (`Background; optional but useful background utilities`)
+- **Layer Two:** Optimizer, winutil (`Polishing; tweaks settings automatically`)
+- **Layer Three:** WinMemoryCleaner (`Background; optional but useful background utilities; recommended`)
 - **Optional/Expert:** Windows-On-Reins (`Dangerous/System Breaking; provided for expert power users`)
 
 ### Shell Modifications/Styling
+Core windows theming is done through SecureUXTheme (Allows for patching msstyles themes), UXThemePatcher and Winaero Theme Switcher. SecureUXTheme directly interacts with the Windows/Resources folder ensuring unsigned themes can be loaded (third party). UXThemePatcher is an additional resource patcher for LTSC or other W11 versions that don't work with SecureUXTheme alone. Lastly for LTSC alone Winaero Theme Switcher is added for getting around a bug when applying a theme (you would run all three at once). 
+
+- **Layer One:** SecureUXTheme, UXThemePatcher, Winaero Theme Switcher (`Core; essential mods that must be used`)
+
+### Primary Themes
+Primary theming are the msstyles, icons and configuration files for Rainmeter within this project. Core windows theming steps must be done first in order to patch the required files for this to work.
+
+- **Layer One:** SecureUXTheme, UXThemePatcher, Winaero Theme Switcher (`Core; essential mods that must be used`)
+
+### Explorer Mods/Additional Theming
+Explorer mods include any changes to add the mica/acrylic effect to DWM (all native windows such as File Explorer, etc.), polishing menus and lastly background styles. This entire stage is a technically optional as some users do not enjoy transparency within their applications however you can still use each tool since a config exists where you can set the alpha to 255 (essentially zero transparency) but still get the clean mica effect. The optional parts include optimized font-rendering for Windows (ClearType often results in jagged, not decent font rendering so MacType solves that but allowing the modifications of default font rendering) and lastly features to be added to the right click menu such as File Converter and Compress File. 
+
+The last stage of this process is of course taskbar and start menu modifications using either ExplorerPatcher (free) or StartAllBack (paid but you can use the seven seas brrr). For the taskbar itself Windhawk is used with various configuration files (provided in `/config`) for a clean, sleek look retaining Windows 11's fancy animations.
+
+- **Layer One:** Windhawk, ExplorerPatcher, StartAllBack (`Core; essential mods that must be used`)
+- **Layer Two:** ExplorerBlurMica, ExplorerBgTool, DWMBlurGlass, TranslucentTB, Rainmeter, Mica For Everyone (`Styling; tweaks settings automatically`)
+- **Layer Three:** Right Click Compress, Right Click File Converter (`Tools; useful background utilities; recommended`)
+- **Layer Four:** Mactype, Chawyehsu Mactype Profile, Wallpaper Engine (`Background; optional but useful background utilities; recommended`)
+
+
