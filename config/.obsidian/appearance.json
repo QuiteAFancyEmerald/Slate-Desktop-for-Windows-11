@@ -1,0 +1,13 @@
+{
+  "accentColor": "",
+  "enabledCssSnippets": [
+    "cursor"
+  ],
+  "cssTheme": "Encore",
+  "theme": "obsidian",
+  "translucency": true,
+  "nativeMenus": false,
+  "interfaceFontFamily": "JetBrainsMono Nerd Font",
+  "textFontFamily": "JetBrainsMono Nerd Font",
+  "monospaceFontFamily": "JetBrainsMono Nerd Font Mono"
+}
