@@ -8,8 +8,6 @@ One of the core principles of this project is **full transparency**—it avoids 
 
 Made in Python it runs through `sources.json` which serves as a transparent way of grabbing every asset needed. You can check it out <a href="https://github.com/QuiteAFancyEmerald/Slate-Desktop-for-Windows-11/blob/main/sources.json"></a> to review direct links as well as a list of each project used.
 
-### Requires Python to be downloaded: https://www.python.org/downloads/
-
 ## Table Of Contents
 <img width=250px align=right src="https://raw.githubusercontent.com/QuiteAFancyEmerald/Slate-for-Windows-11/main/img/preview.png"></img>
 
@@ -153,3 +151,46 @@ Some themes and tools CANNOT be downloaded via the CLI and have to be downloaded
 - **Cider 2 (Music Client):** https://cider.sh/
 - **Rain Day (Wallpaper Engine Wallpaper):** https://steamcommunity.com/sharedfiles/filedetails/?id=2474749882
 - **Rainy Street (Wallpaper Engine Wallpaper):** https://steamcommunity.com/sharedfiles/filedetails/?id=3019553019
+
+## Contributing
+If you wish to contribute to this repository simply make a pull request! This can include any additional optimization/theming mods you want to be added or refactoring any automatic processes. For greater detail check out `CONTRIBUTING.md`. Additions are made easy via `sources.json`.
+
+## Credits
+This project would not be possible without every application used for this project.
+
+| Project | Developer | Description |
+| --- | --- | --- |
+| [pi11z & icons ](https://www.deviantart.com/niivu/art/pi11z-for-Windows-11-1084568949) | niivu | A clean new theme for your Windows 11 desktop environment. The core theme for this entire project |
+| [AME Wizard](https://ameliorated.io/) | Ameliorated LLC | The Ultimate tool for modifying Windows. Used for running registry tweaks and PowerShell scripts in the form of playbooks (ReviOS). |
+| [ReviOS Playbook](https://github.com/meetrevision/playbook/) | ReviOS Team | A customized version of Windows designed for performance, privacy, and stability. |
+| [Optimizer](https://github.com/hellzerg/optimizer/) | Hellzerg | Used to apply specific system tweaks on fresh installs, layer one of optimization. |
+| [WinMemoryCleaner](https://github.com/IgorMundstein/WinMemoryCleaner/) | Igor Mundstein | Utility using native Windows features to optimize memory areas. |
+| [Winaero Tweaker](https://winaerotweaker.com/) | Sergey Tkachenko | All-in-one application that comes with dozens of options for fine-grained tuning of various Windows settings and features. |
+| [Windows On Reins [EXPERT-OPTIONAL]](https://github.com/gordonbay/Windows-On-Reins) | Gordon Bay | Powershell script for hardcore performance and privacy optimization. |
+| [SecureUxTheme](https://github.com/namazso/SecureUxTheme/) | Namazso | Secure boot compatible in-memory UltraUxTheme patcher. |
+| [UXThemePatcher](https://uxthemepatcher.com/) | UXThemePatcher Team | Modifies system files to use third-party themes. | 
+| [No!! MeiryoUI](https://github.com/Tatsu-syo/noMeiryoUI) | Tatsu-syo | Windows system font setting tool for better customization. |
+| [JetBrainsMono Font](https://github.com/ryanoasis/nerd-fonts/) | JetBrains | Font designed specifically for developers. | 
+| [VS Cursors 20.0](https://www.deviantart.com/vladsukhetskyi/art/VS-Cursors-20-0-1097245195) | vladsukhetskyi | Core mouse cursor used for this project. Very clean and great display quality. | 
+| [7TSP (Optional/Alternative)](https://www.deviantart.com/devillnside/art/7TSP-GUI-2019-Edition-804769422) | Skinpacks | Patches .mun files to allow custom icons. |
+| [StartAllBack](https://www.startallback.com/) | StartAllBack | Modifies the start menu and the primary example used for this project. For a free option use ExplorerPatcher below. |
+| [Stardock Software](https://www.stardock.com/products/) | Stardock Software | Collection of clean (but paid) Windows modding tools for the Start Menu and workflow. Not needed is optional but nice to have. |
+| [ExplorerBlurMica](https://github.com/Maplespe/ExplorerBlurMica/) | Maplespe | Adds background blur effect, Acrylic or Mica effect to Explorer. | 
+| [ExplorerBgTool](https://github.com/Maplespe/explorerTool/) | Maplespe | Allows custom background images in Windows Explorer. | 
+| [DWMBlurGlass](https://github.com/Maplespe/DWMBlurGlass/) | Maplespe | Adds custom effects to the system title bar and core Windows apps. | 
+| [Windhawk](https://github.com/ramensoftware/windhawk/) | Ramen Software | Customization marketplace for Windows programs. | 
+| [ExplorerPatcher](https://github.com/valinet/ExplorerPatcher/) | Valinet | Modifies the start menu, a free alternative to StartIsBack. | 
+| [RightClickCompress](https://github.com/otdavies/RightClickCompress/) | OT Davies | Adds right-click option to compress images and videos. | 
+| [MacType](https://github.com/snowie2000/mactype/) | Snowie2000 | Improves font rendering in Windows. | 
+| [Chawye Hsu's MacType Profile](https://github.com/chawyehsu/mactype-profile/) | Chawye Hsu | Custom profile for better font rendering. | 
+| [WinSetView](https://github.com/LesFerch/WinSetView/) | LesFerch | Sets Windows File Explorer default folder views easily. | 
+| [TranslucentTB](https://github.com/TranslucentTB/TranslucentTB/) | TranslucentTB Team | Makes the Windows taskbar translucent/transparent. | 
+| [Rainmeter](https://github.com/rainmeter/rainmeter/) | Rainmeter Team | Displays customizable skins on your desktop. | 
+| [Zephyr 2.0](https://www.deviantart.com/smithxtt/art/Zephyr-2-0-891270319) | smithxtt | Very clean rainmeter theme for your desktop. | 
+| [Sonder](https://www.deviantart.com/michaelpurses/art/Sonder-Rainmeter-skin-838147223) | michaelpurses | Clean rainmeter skin for clock usage or ultrawide additons. | 
+| [MicaForEveryone](https://github.com/MicaForEveryone/MicaForEveryone/) | Mica For Everyone Team | Enables backdrop effects on Win32 apps in Windows 11. |
+| [FileOptimizer](https://sourceforge.net/projects/nikkhokkho/files/FileOptimizer/) | Nikkhokkho | Optimizes files to reduce size and improve performance. | 
+| [Czkawka](https://github.com/qarmin/czkawka/) | Qarmin | Simple and fast tool for finding duplicate files. |
+| [Rose Pine for Ungoogled Chromium/Chrome](https://github.com/rose-pine/google-chrome) | Rose Pine Team | Soho vibes for Google Chrome. |
+| [lavender - new tab for Ungoogled Chromium/Chrome](https://chromewebstore.google.com/detail/lavender-new-tab/ffobepdbanoiodmfimpmanafepclokbc) | fvrests | a soft, minimal new tab for your browser. |
+| [Simply Darkish for Firefox](https://www.deviantart.com/dpcdpc11/art/Simplify-Darkish-Firefox-Theme-852918492) | dpcdpc11 | Clean Firefox theme with mood |

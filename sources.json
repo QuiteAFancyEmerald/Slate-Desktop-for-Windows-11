@@ -64,7 +64,7 @@
             "type": "url"
         },
         {
-            "path": "https://uxthemepatcher.com/UXThemePatcher_11.0.sfx.exe",
+            "path": "https://github.com/Tatsu-syo/noMeiryoUI/releases/download/TAG-3.3.1/noMeiryoUI3.3.1.zip",
             "name": "No!! MeiryoUI",
             "description": "No!! MeiryoUI is Windows system font setting tool on Windows 8.1/10/11.",
             "extract": false,
