@@ -55,12 +55,21 @@
             "type": "url"
         },
         {
+            "path": "https://uxthemepatcher.com/UXThemePatcher_11.0.sfx.exe",
+            "name": "UXThemePatcher",
+            "description": "UXThemePatcher modifies your system files so that third party themes can be used. Layered over SecureUXTheme since W11 can get around some patches.",
+            "extract": false,
+            "folder_main": "02 - Shell Themes",
+            "folder_name": "Step 2 - UXThemePatcher - Core",
+            "type": "url"
+        },
+        {
             "path": "https://dl.skinpacks.com/tools/7tsp_gui_2019_edition.zip",
             "name": "7TSP (Optional/Alternative is FOSS- this one is NOT)",
             "description": "Patches .mun files allowing for custom icons/icon packs.",
             "extract": true,
             "folder_main": "02 - Shell Themes",
-            "folder_name": "Step 2 - 7TSP GUI 2019 - Optional - NOTFOSS",
+            "folder_name": "Step 3 - 7TSP GUI 2019 - Optional - NOTFOSS",
             "type": "url"
         },
         {
