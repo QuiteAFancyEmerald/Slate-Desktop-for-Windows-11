@@ -21,7 +21,9 @@ Made in Python it runs through `sources.json` which serves as a transparent way 
 
 
 ### Supported Windows 11 Versions: 
-`Windows 11 21H2`, `Windows 11 22H2`, `Windows 11 23H2`, `Windows 11 24H2` (Works with ANY Windows edition however **Windows 11 IoT LTSC** is *highly recommended*)
+`Windows 11 21H2`, `Windows 11 22H2`, `Windows 11 23H2`, `Windows 11 24H2` 
+
+(Works with ANY Windows edition however **Windows 11 IoT LTSC** is *highly recommended*)
 
 > [!CAUTION]
 > You are responsible for running this script. Make sure you have backups prior to utilizing Slate and ensure you are on **Windows 11 22H2/Windows 11 23H2/Windows 11 IoT LTSC**. This project will not work on **Windows 10** and will damage it!!!
@@ -114,6 +116,15 @@ The last stage of this process is of course taskbar and start menu modifications
 Requires **Python** to be downloaded in order to run. Download from below.
 
 **Python (Latest):** https://www.python.org/downloads/
+
+Ensure you verify that you are on Windows 11 and using an [approved](#supported-windows-11-versions) version.
+
+#### Windows ISO Setup
+This project highly recommends you use **Windows 11 IoT LTSC 24H2**. You can get an official ISO/release installer from the official <a href="https://www.microsoft.com/en-us/evalcenter/evaluate-windows-11-iot-enterprise-ltsc">Microsoft</a> page or <a href="https://massgrave.dev/genuine-installation-media">Massgrave</a> (Recommended).
+
+For more information on how to upgrade or swap your Windows check this <a href="https://github.com/SysadminWorld/windows11">GitHub</a> repository. You can also just extract the ISO you download with something like WinRAR (or Peazip) if you do not have a USB and install with the setup that way. 
+
+Just note that you will need to **backup ALL your files beforehand and do a clean install.**
 
 ### Download Release
 1. Download the latest release from the <a href="https://github.com/QuiteAFancyEmerald/Slate-Desktop-for-Windows-11/releases">Releases</a> page or the source code button
