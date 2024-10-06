@@ -32,7 +32,7 @@ def check_windows_version():
     sys.exit(1)
 
 def print_slate_text():
-    project_version = "1.0.8"
+    project_version = "1.0.10"
     author = "Quite A Fancy Emerald"
     github_link = "https://github.com/QuiteAFancyEmerald/Slate-Desktop-for-Windows-11"
     

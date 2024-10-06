@@ -64,12 +64,30 @@
             "type": "url"
         },
         {
+            "path": "https://uxthemepatcher.com/UXThemePatcher_11.0.sfx.exe",
+            "name": "No!! MeiryoUI",
+            "description": "No!! MeiryoUI is Windows system font setting tool on Windows 8.1/10/11.",
+            "extract": false,
+            "folder_main": "02 - Shell Themes",
+            "folder_name": "Step 3 - MeiryoUI - Core",
+            "type": "url"
+        },
+        {
+            "path": "https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/JetBrainsMono.zip",
+            "name": "JetBrainsMono Font",
+            "description": "JetBrains officially created font for developers.",
+            "extract": false,
+            "folder_main": "02 - Shell Themes",
+            "folder_name": "Step 4 - JetBrainsMono - Core",
+            "type": "url"
+        },
+        {
             "path": "https://dl.skinpacks.com/tools/7tsp_gui_2019_edition.zip",
             "name": "7TSP (Optional/Alternative is FOSS- this one is NOT)",
             "description": "Patches .mun files allowing for custom icons/icon packs.",
             "extract": true,
             "folder_main": "02 - Shell Themes",
-            "folder_name": "Step 3 - 7TSP GUI 2019 - Optional - NOTFOSS",
+            "folder_name": "Step 5 - 7TSP GUI 2019 - Optional - NOTFOSS",
             "type": "url"
         },
         {
@@ -145,11 +163,20 @@
             "type": "url"
         },
         {
+            "path": "https://github.com/LesFerch/WinSetView/releases/download/2.99/WinSetView-Setup.exe",
+            "name": "WinSetView",
+            "description": "WinSetView provides an easy way to set Windows File Explorer default folder views.",
+            "extract": false,
+            "folder_main": "03 - Explorer Mods",
+            "folder_name": "Step 7 - WinSetView - Optional",
+            "type": "url"
+        },
+        {
             "path": "https://github.com/TranslucentTB/TranslucentTB/releases/download/2024.1/bundle.msixbundle",
             "name": "TranslucentTB",
             "description": "A lightweight utility that makes the Windows taskbar translucent/transparent.",
             "extract": false,
-            "folder_main": "04 - Additional Theming",
+            "folder_main": "04 - Additional Mods",
             "folder_name": "Step 1 - TranslucentTB - Style",
             "type": "url"
         },
@@ -158,7 +185,7 @@
             "name": "Rainmeter",
             "description": "Rainmeter allows you to display customizable skins on your desktop.",
             "extract": false,
-            "folder_main": "04 - Additional Theming",
+            "folder_main": "04 - Additional Mods",
             "folder_name": "Step 2 - Rainmeter - Style",
             "type": "url"
         },
@@ -167,8 +194,26 @@
             "name": "MicaForEveryone",
             "description": "Mica For Everyone is a tool to enable backdrop effects on the title bars of Win32 apps on Windows 11.",
             "extract": false,
-            "folder_main": "04 - Additional Theming",
+            "folder_main": "04 - Additional Mods",
             "folder_name": "Step 3 - MicaForEveryone - Style",
+            "type": "url"
+        },
+        {
+            "path": "https://sourceforge.net/projects/nikkhokkho/files/FileOptimizer/16.70.1825/FileOptimizerSetup.exe",
+            "name": "FileOptimizer",
+            "description": "Drag the files you want to optimize to the files grid in FileOptimizer, right click with the mouse to open the contextual menu, and then click on Optimize.",
+            "extract": false,
+            "folder_main": "04 - Additional Mods",
+            "folder_name": "Step 3 - FileOptimizer - Tool",
+            "type": "url"
+        },
+        {
+            "path": "https://github.com/qarmin/czkawka/releases/download/7.0.0/windows_czkawka_gui_gtk_46.zip",
+            "name": "Czkawka",
+            "description": "A simple, fast and free app to remove unnecessary files from your computer (duplicate file search GUI).",
+            "extract": false,
+            "folder_main": "04 - Additional Mods",
+            "folder_name": "Step 3 - Czkawka - Tool",
             "type": "url"
         },
         {
