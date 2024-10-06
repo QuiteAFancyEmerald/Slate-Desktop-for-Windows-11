@@ -117,11 +117,28 @@ Requires **Python** to be downloaded in order to run. Download from below.
 
 ### Download Release
 1. Download the latest release from the <a href="https://github.com/QuiteAFancyEmerald/Slate-Desktop-for-Windows-11/releases">Releases</a> page or the source code button
-2. Unzip it to a location such as "C:\Users\[USER]\Documents".
-3. Run "install.bat" as administrator.
+2. Unzip it to a location such as `C:\Users\[USER]\Documents`.
+3. Run "`install.bat`" as administrator.
 4. Within the Powershell/Command Prompt window that opens follow the CLI process by pressing Enter
-5. Navigate to "[Location Path]\Slate-Desktop-for-Windows-11\sources" and read over the `Installation.md` file to step by step information on running all of the assets in `.\sources\downloads` (it is also numbered in the downloads folder)
+5. Navigate to `[Location Path]\Slate-Desktop-for-Windows-11\sources` and read over the `Installation.md` file to step by step information on running all of the assets in `.\sources\downloads` (it is also numbered in the downloads folder)
 6. Follow each step within the `Installation.md` file by the numbers running each application in the `.\sources\downloads` folder and pasting configs from the correct folder `.\config`
 
 ### Uninstall
 **Note:** This project **CANNOT** be uninstalled fully. The tweaks are safe for updating windows however just be sure to check this repository for updates or detailed information on supported versions
+
+## External Assets
+Some themes and tools CANNOT be downloaded via the CLI and have to be downloaded from the official site due to licencing. Below is a list of all external assets but are also provided in `./sources/INSTALLATION.md` step by step. Special thanks to each creator/project for their amazing work.
+
+- **pi11z & pi11z Icons:** https://www.deviantart.com/niivu/art/pi11z-for-Windows-11-1084568949
+- **Winaero Tweaker:** https://winaerotweaker.com/
+- **StartAllBack:** https://www.startallback.com/
+- **VS Cursors 20.0:** https://www.deviantart.com/vladsukhetskyi/art/VS-Cursors-20-0-1097245195
+- **Zephyr 2.0:** https://www.deviantart.com/smithxtt/art/Zephyr-2-0-891270319
+- **Sonder:** https://www.deviantart.com/michaelpurses/art/Sonder-Rainmeter-skin-838147223
+- **Simply Darkish For Firefox:** https://www.deviantart.com/dpcdpc11/art/Simplify-Darkish-Firefox-Theme-852918492
+- **Rose Pine For Ungoogled Chromium/Chrome:** https://github.com/rose-pine/google-chrome
+- **Lavender | New Tab for Ungoogled Chromium/Chrome:** https://chromewebstore.google.com/detail/lavender-new-tab/ffobepdbanoiodmfimpmanafepclokbc
+- **7TSP GUI 2019:** https://www.deviantart.com/devillnside/art/7TSP-GUI-2019-Edition-804769422
+- **Cider 2 (Music Client):** https://cider.sh/
+- **Rain Day (Wallpaper Engine Wallpaper):** https://steamcommunity.com/sharedfiles/filedetails/?id=2474749882
+- **Rainy Street (Wallpaper Engine Wallpaper):** https://steamcommunity.com/sharedfiles/filedetails/?id=3019553019
