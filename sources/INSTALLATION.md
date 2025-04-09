@@ -29,6 +29,7 @@ In order to run the bundle or "playbook" you will simply:
 Optimizer is an open source utility GUI hosted on GitHub that allows you to run more Windows 11 tweaks and remove specific UWP apps. For this script it is used to cover for anything missed by AME Wizard.
 
 1) Open up Optimizer and select the following tweaks at a minimum.
+2) You can also import the Slate pre-configured config file at `./src/config/Optimzier.json`
 
 [ Provide Optimizer Tweaks Screenshot ]
 
@@ -41,6 +42,8 @@ Win Memory Cleaner is a background utility that will remain running on your syst
 ## Step 3c - Windows On Reins (EXPERT/OPTIONAL)
 
 WOR is a highly effective script that strips the majority of Windows bloat and privacy concerns but at a system breaking level. Only run this is you know what you are doing and want absolute results for optimization that surpasses the provided screenshots for this project. I am talking in terms of as low as 1GB or lower with RAM usage.
+
+1) Open up Powershell as admin and run the respective PS file.
 
 ## Step 4 - SecureUXTheme (Shell Themes - CORE)
 
@@ -78,21 +81,42 @@ This step covers replacing universal system icons across Windows 11 using pi11z 
 
 This application is primarily used for applying system-wide Mica or Acrylic effects to other applications. Pure cosmetics but great looking.
 
+1) Copy the ExplorerBlurMica folder to C:/Program Files
+2) Copy and paste the config file provided at `./config/ExplorerBlurMica.config.ini` to the new location and rename to remove the ExplorerBlurMica prefix at the start of `config.ini`
+3) Run `register.cmd` in the folder to apply the shell patches
+
 ## Step 9 - ExplorerBGTool (Shell Themes - Optional)
 
 ExplorerBGTool is used for patching explorer (File Explorer) with custom background images. This in combination with ExplorerBlurMica + DWMBlurGlass creates a very clean effect without really impacting performance (due to it being a simple static shell mod).
+
+1) Copy the ExplorerBGM folder to C:/Program Files
+2) Copy and paste the config file provided at `./config/ExplorerBGM.config.ini` to the new location and rename to remove the ExplorerBlurMica prefix at the start of `config.ini`
+3) Run `register.cmd` in the folder to apply the shell patches
 
 ## Step 10 - DWMBlurGlass (Shell Themes - Optional)
 
 This utility takes the attributes of ExplorerBlurMica and applies to globally to the system patching WinUI effecting applications like Task Manager and more.
 
+1) Copy the DWMBlurGlass folder to C:/Program Files
+3) Run the respective application (DWMBlurGlass.exe) and click install to apply the shell patches
+
 ## Step 11 - Windhawk (Shell Themes - Optional)
 
-Windhawk is used for running pre-packaged utilities that enhance the overall functionality of Windows 11. This arranges from simple icon modifications to taskbar mods. 
+Windhawk is used for running pre-packaged utilities that enhance the overall functionality of Windows 11. This arranges from simple icon modifications to taskbar mods.
+
+1) Install Windhawk from the respective installer.
+2) Open up Windhawk and follow the default instructions
+3) Install the Taskbar Button Click mod and paste the JSON config text from provided at `./config/Windhawk/taskbar-button-click.json` into mod configuration box
+4) Install the Taskbar Clock Customization mod and paste the JSON config text from provided at `./config/Windhawk/taskbar-clock-customization.json` into mod configuration box
+5) Install the Taskbar Icon Size mod and paste the JSON config text from provided at `./config/Windhawk/taskbar-icon-size.json` into mod configuration box
+6) Install the Taskbar Label mod and paste the JSON config text from provided at `./config/Windhawk/taskbar-labels.json` into mod configuration box
 
 ## Step 12 - ExplorerPatcher OR StartAllBack (Shell Themes - Optional)
 
 ExplorerPatcher (free) is used for modding the default start menu to create either a more Windows 7 or Windows 10 look. StartAllBack (paid) however is used mostly themed Windows 7 / Windows 11 ish looks with theming capabilities. 
+
+1) Open up ep_setup.exe to install ExplorerPatcher
+2) Tweak the respective settings as needed
 
 ## Step 13 - RightClickCompress (Shell Themes - Optional)
 
