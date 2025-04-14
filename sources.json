@@ -163,7 +163,7 @@
             "type": "url"
         },
         {
-            "path": "https://github.com/LesFerch/WinSetView/releases/download/2.99/WinSetView-Setup.exe",
+            "path": "https://github.com/LesFerch/WinSetView/releases/download/3.1.3/WinSetView-Setup.exe",
             "name": "WinSetView",
             "description": "WinSetView provides an easy way to set Windows File Explorer default folder views.",
             "extract": false,
