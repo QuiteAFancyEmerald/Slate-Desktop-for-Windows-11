@@ -223,7 +223,7 @@
             "type": "cmd"
         },
         {
-            "path": "powershell -Command 'winget install SomePythonThings.WingetUIStore'",
+            "path": "powershell -Command 'winget install --id MartiCliment.UniGetUI'",
             "name": "UniGetUI",
             "description": "UniGetUI is a GUI that can fetch, update and repackage winget applications. Manage winget apps as if its the Microsoft store!",
             "type": "cmd"
