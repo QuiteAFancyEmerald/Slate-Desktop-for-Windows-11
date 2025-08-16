@@ -136,7 +136,7 @@ Simple application that lets you make the Windows taskbar look much better.
 
 ## Step 17 - Rainmeter
 
-Rainmeter allows you to utilize custom pre-made skins adding widgets, live players and more.
+Rainmeter allows you to utilize custom pre-made skins adding widgets, live players and more. This project currently uses [Zephyr 2.0](https://www.deviantart.com/smithxtt/art/Zephyr-2-0-891270319).  
 
 ## Step 18 - MicaForEveryone
 

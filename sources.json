@@ -55,15 +55,6 @@
             "type": "url"
         },
         {
-            "path": "https://uxthemepatcher.com/UXThemePatcher_11.0.sfx.exe",
-            "name": "UXThemePatcher",
-            "description": "UXThemePatcher modifies your system files so that third party themes can be used. Layered over SecureUXTheme since W11 can get around some patches.",
-            "extract": false,
-            "folder_main": "02 - Shell Themes",
-            "folder_name": "Step 2 - UXThemePatcher - Core",
-            "type": "url"
-        },
-        {
             "path": "https://github.com/Tatsu-syo/noMeiryoUI/releases/download/TAG-3.3.1/noMeiryoUI3.3.1.zip",
             "name": "No!! MeiryoUI",
             "description": "No!! MeiryoUI is Windows system font setting tool on Windows 8.1/10/11.",
@@ -215,12 +206,6 @@
             "folder_main": "04 - Additional Mods",
             "folder_name": "Step 3 - Czkawka - Tool",
             "type": "url"
-        },
-        {
-            "path": "powershell -Command 'Install-PackageProvider -Name NuGet -Force | Out-Null; Install-Module -Name Microsoft.WinGet.Client -Force -Repository PSGallery | Out-Null; Repair-WinGetPackageManager'",
-            "name": "winget",
-            "description": "WinGet is the Windows Package Manager.",
-            "type": "cmd"
         },
         {
             "path": "powershell -Command 'winget install --id MartiCliment.UniGetUI'",
