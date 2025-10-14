@@ -1,0 +1,56 @@
+---
+title: Packages
+description: Removes system (WinSxS) packages
+privilege: TrustedInstaller
+actions:
+
+  # NOTE: !systemPackage: method of removing system packages is now deprecated and not recommended by Revision, as it is one of the main cause of #49
+
+  - !writeStatus: {status: "Removing system packages"}
+  - !run:
+    path: "%ProgramFiles%\\Revision Tool"
+    exe: "revitool.exe"
+    args: "winpackage --install system-components-removal"
+    wait: true
+    runas: currentUserElevated
+    weight: 100
+
+  - !writeStatus: {status: 'Disabling Windows Defender', option: 'disable-defender'}
+  - !run:
+    path: "%ProgramFiles%\\Revision Tool"
+    exe: "revitool.exe"
+    args: "defender disable --force"
+    wait: true
+    runas: currentUserElevated
+    weight: 100
+    option: 'disable-defender'
+
+  - !writeStatus: {status: 'Enabling Windows Defender', option: 'enable-defender'}
+  - !run:
+    path: "%ProgramFiles%\\Revision Tool"
+    exe: "revitool.exe"
+    args: "defender enable"
+    wait: true
+    runas: currentUserElevated
+    weight: 100
+    option: 'enable-defender'
+
+  - !writeStatus: {status: "Removing AI components", option: 'remove-winsxs-ai'}
+  - !run:
+    path: "%ProgramFiles%\\Revision Tool"
+    exe: "revitool.exe"
+    args: "winpackage --install ai-removal"
+    wait: true
+    runas: currentUserElevated
+    weight: 100
+    option: 'remove-winsxs-ai'
+
+  - !writeStatus: {status: "Removing OneDrive WinSxS", option: "remove-onedrive"}
+  - !run:
+    path: "%ProgramFiles%\\Revision Tool"
+    exe: "revitool.exe"
+    args: "winpackage --install onedrive-removal"
+    wait: true
+    runas: currentUserElevated
+    weight: 100
+    option: "remove-onedrive"

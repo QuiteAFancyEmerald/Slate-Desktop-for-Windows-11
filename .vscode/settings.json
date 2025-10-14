@@ -1,0 +1,30 @@
+{
+    "yaml.customTags": [
+        "!run: mapping",
+        "!registryKey: mapping",
+        "!registryValue: mapping",
+        "!appx: mapping",
+        "!file: mapping",
+        "!service: mapping",
+        "!scheduledTask: mapping",
+        "!taskKill: mapping",
+        "!systemPackage: mapping",
+        "!cmd: mapping",
+        "!powerShell: mapping",
+        "!writeStatus: mapping",
+        "!task: mapping",
+        "!download: mapping",
+        "!status: mapping",
+        "!software: mapping"
+    ],
+    "yaml.schemas": {
+        "https://json.schemastore.org/github-issue-config.json": "file:///workspaces/playbook/.github/ISSUE_TEMPLATE/config.yml"
+    },
+    "files.associations": {
+        "*.conf": "xml"
+    },
+    "[xml]": {
+        "editor.autoClosingBrackets": "never",
+        "files.trimFinalNewlines": true
+    }
+}

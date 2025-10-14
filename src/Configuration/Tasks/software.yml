@@ -1,0 +1,31 @@
+---
+title: Software
+description: Installs preferred software 
+privilege: TrustedInstaller
+actions:
+
+  # https://github.com/meetrevision/playbook/issues/81
+  # - !status: {status: 'Updating Winget'}
+  # - !powerShell:
+  #   weight: 50
+  #   runas: currentUserElevated
+  #   wait: true
+  #   exeDir: true
+  #   command: '.\UPDATE-APPX.ps1'
+
+  # Helium
+  - !status: {status: 'Installing Helium', option: "browser-helium"}
+  - !run: 
+    exe: 'winget'
+    args: "install ImputNet.Helium --silent --accept-source-agreements --accept-package-agreements"
+    runas: currentUserElevated
+    weight: 150
+
+  # Firefox
+  - !status: {status: 'Installing Zen Browser', option: "browser-zen"}
+  - !software:
+    name: "Zen Browser"
+    source: chocolatey
+    option: "browser-zen"
+    package: 'zen-browser'
+    weight: 150
