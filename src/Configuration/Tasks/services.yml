@@ -73,3 +73,41 @@ actions:
   # == condrv - Automatic
   # -----> #184 This is not ReviOS related, but setting to Automatic fixes error 3489660986 (0xd000003a)
   - !service: {name: 'condrv', operation: change, startup: 2} 
+
+  # === AllJoyn Router Service - Disabled 
+  - !service: {name: 'AJRouter', operation: change, startup: 4}
+
+  # === AssignedAccessManager Service - Disabled 
+  - !service: {name: 'AssignedAccessManagerSvc', operation: change, startup: 4} 
+
+  # === Connected Devices Platform Service - Manual 
+  - !service: {name: 'CDPSvc', operation: change, startup: 3}
+
+  # === Connected Devices and Universal Glass - Automatic 
+  - !service: {name: 'CDPUserSvc_*', operation: change, startup: 2}
+
+  # === COM+ System Application - Manual 
+  - !service: {name: 'COMSysApp', operation: change, startup: 3}
+
+  # === MsKeyboardFilter - Manual 
+  - !service: {name: 'MsKeyboardFilter', operation: change, startup: 3}
+  
+  # === Storage Service - Manual 
+  - !service: {name: 'StorSvc', operation: change, startup: 3}
+
+  # === Text Input Management Service - Manual 
+  - !service: {name: 'TextInputManagementService', operation: change, startup: 3} 
+
+  # === Update Orchestrator Service - Manual 
+  - !service: {name: 'UsoSvc', operation: change, startup: 3} 
+
+  # === VMware SVGA Helper Service - Manual 
+  - !service: {name: 'vm3dservice', operation: change, startup: 3} 
+
+  # === Homegroup - Manual 
+  - !service: {name: 'HomeGroupListener', operation: change, startup: 3} 
+
+  # === Homegroup - Manual 
+  - !service: {name: 'HomeGroupProvider', operation: change, startup: 3} 
+
+  
